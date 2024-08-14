@@ -1,4 +1,4 @@
-name: "Autosend"
+name: "Github auto checkout"
 
 on:
   push:
@@ -18,4 +18,4 @@ jobs:
         uses: joelwmale/webhook-action@master
         with:
           url: "https://api.groupme.com/v3/bots/post"
-          body: '{"text" : "keepGV active", "bot_id" : "${{ secrets.GVAUTOSENDSMS}}" }'
+          body: '{"text" : "Github repository checkout", "bot_id" : "${{ secrets.GVAUTOSENDSMS}}" }'
