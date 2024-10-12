@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: pushBotMsg
-        uses: Asolitaire/webhook-action@master
+        uses: joelwmale/webhook-action@master
         with:
           url: "https://api.groupme.com/v3/bots/post"
           body: '{"text" : "Git repository checkout", "bot_id" : "${{ secrets.GVAUTOSENDSMS}}" }'
